@@ -25,7 +25,7 @@ Spring
 Winter
 Summer`
 - Add some years on the password list
-- `for i in $(cat pwlist.txt); do echo $i; echo ${i}2019; echo ${i}2020; done | tee pwlistYear.txt`
+- `for i in $(cat pwlist.txt); do echo $i; echo ${i}2019; echo ${i}2020; done > tee pwlistYear.txt`
 - Toggle the password list with hashcat
 - `hashcat --force --stdout pwlistYear.txt -r /usr/share/hashcat/rules/best64.rule`
 - Add ! on the password list
