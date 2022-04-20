@@ -33,7 +33,7 @@ Summer`
 - Toggle the password list again
 - `hashcat --force --stdout pwlistYearEx.txt -r /usr/share/hashcat/rules/best64.rule > pwlisttoggle2.txt`
 - Toggle various uppercase
-- `hashcat --force --stdout pwlisttoggle2.txt -r /usr/share/hashcat/rules/best64.rule -r /usr/share/hashcat/rules/toggles1.rule > pwlisttoggle3.txt
+- `hashcat --force --stdout pwlisttoggle2.txt -r /usr/share/hashcat/rules/best64.rule -r /usr/share/hashcat/rules/toggles1.rule > pwlisttoggle3.txt`
 - Remove the repetative words
 - `cat pwlisttoggle3.txt | sort -u > pwlistYearExUnique.txt`
 - Remove the words whose length is less than 7
